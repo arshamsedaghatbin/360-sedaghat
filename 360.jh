@@ -70,7 +70,7 @@ relationship OneToMany {
     
 }
 relationship ManyToMany{
-	Department{employee} to Employee,
-	Employee {group} to Group
+	Department{employee} to Employee{department},
+	Employee {group} to Group{group}
 }
 
